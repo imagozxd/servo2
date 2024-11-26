@@ -1101,6 +1101,7 @@ GameObject:
   - component: {fileID: 874908830}
   - component: {fileID: 874908829}
   - component: {fileID: 874908828}
+  - component: {fileID: 874908831}
   m_Layer: 0
   m_Name: PistonC
   m_TagString: Untagged
@@ -1197,6 +1198,52 @@ Transform:
   - {fileID: 141155982}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 231.15, z: 0}
+--- !u!144 &874908831
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874908827}
+  m_ConnectedBody: {fileID: 1090646776}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 2.31, z: 0}
+  m_Axis: {x: 1, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: -1.46, y: -0.11, z: -1.97}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &899801915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1338,7 @@ GameObject:
   - component: {fileID: 952820366}
   - component: {fileID: 952820365}
   - component: {fileID: 952820364}
+  - component: {fileID: 952820367}
   m_Layer: 0
   m_Name: PistonB
   m_TagString: Untagged
@@ -1387,6 +1435,52 @@ Transform:
   - {fileID: 1167668128}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 131.87, z: 0}
+--- !u!144 &952820367
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952820363}
+  m_ConnectedBody: {fileID: 1090646776}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 2.31, z: 0}
+  m_Axis: {x: 1, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: 2.18, y: -0.1, z: -0.96}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,8 +2567,8 @@ SceneRoots:
   - {fileID: 1090646777}
   - {fileID: 1152662223}
   - {fileID: 167307344}
-  - {fileID: 259293060}
   - {fileID: 204112445}
+  - {fileID: 259293060}
   - {fileID: 2140907565}
   - {fileID: 952820366}
   - {fileID: 606628954}
